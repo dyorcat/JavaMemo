@@ -1,5 +1,6 @@
-package com.sparta.memo;
+package com.sparta.memo.controller;
 
+import com.sparta.memo.dto.MemoResponseDto;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
