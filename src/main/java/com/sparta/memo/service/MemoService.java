@@ -38,6 +38,7 @@ public class MemoService {
         return memoRepository.findAll().stream().map(MemoResponseDto::new).toList();
     }
 
+    @Transactional
     public Long updateMemo(Long id, MemoRequestDto requestDto) {
         // 해당 메모가 DB에 존재하는지 확인
         Memo memo = findMemo(id);
