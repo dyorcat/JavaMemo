@@ -21,6 +21,11 @@ public class MemoController {
         return memoService.createMemo(requestDto);
     }
 
+    @GetMapping("/memos/contents")
+    public List<MemoResponseDto> getMemosByKeyword(String keyword) {
+        return memoService.getMemosByKeyword(keyword);
+    }
+
     @GetMapping("/memos")
     public List<MemoResponseDto> getMemos() {
         return memoService.getMemos();
